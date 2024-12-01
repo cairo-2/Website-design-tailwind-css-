@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body class="h-full">
+
+    
+    <!-- start nav bar -->
+
+
+    <div class="nav_bar relative">
+
+        <div class="icon h-24 rounded-b-2xl w-40 absolute z-40 left-52 bg-green-400 flex items-center justify-center">
+            <h1 class="font-extrabold text-4xl">
+                TORN
+            </h1>
+        </div>
+
+        <div class="nav_bar_top ">
+            <div class="flex items-center relative h-11 bg-gradient-to-b from-nav_from to-nav_to">
+                <div class="absolute left-96 flex items-center justify-center gap-4">
+                    <div class="links text-nav_text_color flex gap-3 text-sm">
+                        <a href="#">Wiki</a>
+                        <a href="#">Rules</a>
+                        <a href="#">Forums</a>
+                        <a href="#">Discord</a>
+                        <a href="#">Staff</a>
+                        <a href="#">Credits</a>
+                    </div>
+                    
+                    <div class="search relative">
+                        <input class="rounded-md bg-black w-40" type="text" placeholder="   search...">
+                        <button class="absolute right-2 text-nav_text_color">
+                            <i class='bx bx-search-alt-2'></i>
+                        </button>
+                    </div>
+                    <div class="search-option ">
+                        <select id="myDropdown" class="bg-black text-nav_text_color rounded-md w-40">
+                            <option value="user" >user</option>
+                            <option value="faction">faction</option>
+                            <option value="company">company</option>
+                            <option value="wiki">wiki</option>
+                          </select>
+                          
+                    </div>
+                    <div class="tools flex gap-4">
+                        <button class="  text-nav_text_color">
+                            <i class='bx bx-glasses-alt'></i>
+                        </button>
+                        <button class="  text-nav_text_color">
+                            <i class='bx bxs-time' ></i>
+                        </button>
+                        <button class="  text-nav_text_color">
+                            <i class='bx bx-list-ul'></i>
+                        </button>
+                        <button class="  text-nav_text_color  w-4 ">
+                            <img src="img/profile_man.jpg" alt="" class="rounded-xl border-2 border-gray-500">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="news">
+            <div class="flex items-center relative h-9" style="background-image: repeating-linear-gradient(90deg,#344657 0% .2%,#0C1014 .2% .4%);">
+                <p class="text-white absolute left-96">here we show the last news</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- end nav bar -->
+
+
+    <!-- start body -->
+    <div class="body flex gap-5 h-full px-44 pt-5 pb-10 bg-gray-300"> 
+
+
+        <!-- start slid bar -->
+        <div class="slid_bar w-48">
+
+
+            <div class="information">
+
+
+                <div class="head pl-2 rounded-tr-lg rounded-br-lg mb-1" style="background-image: repeating-linear-gradient(90deg,#314960 0% .4%,#3c5268 .4% .8%);">
+                    <h6 class="text-white">
+                        information
+                    </h6>
+                </div>
+
+
+                <div class="body">
+                    <div class="pl-2 pb-2 rounded-tr-lg rounded-br-lg bg-gray-100">
+
+
+                        <div class="icons">
+                            <i class='bx bx-male-sign pr-2'></i>
+                            <i class='bx bxs-bank pr-2'></i>
+                            <i class='bx bxs-hand pr-2'></i>
+                            <i class='bx bxs-star pr-2'></i>
+                            <i class='bx bxs-graduation pr-2'></i>
+                            <i class='bx bxs-flag pr-2'></i>
+                            <i class='bx bx-map-alt pr-2'></i>
+                            <i class='bx bx-candles pr-2'></i>
+                            <i class='bx bx-shopping-bag pr-2'></i>
+                            <i class='bx bx-leaf pr-2'></i>
+                            <i class='bx bxs-bug-alt pr-2'></i>
+                            <i class='bx bx-world pr-2'></i>
+                        </div>
+
+
+                        <div class="pr-2">
+                            <hr class="border-t border-gray-300">
+                        </div>
+
+
+                        <div class="letters">
+                            <div>
+                                <h1 class="font-bold inline">Name:</h1>
+                                <p class="inline">Cairo2</p>
+                            </div>
+                            <div>
+                                <h1 class="font-bold inline">money:</h1>
+                                <p class="inline">1525000</p>
+                            </div>
+                            <div>
+                                <h1 class="font-bold inline">level:</h1>
+                                <p class="inline">54</p>
+                            </div>
+                            <div>
+                                <h1 class="font-bold inline">points:</h1>
+                                <p class="inline">205</p>
+                            </div>
+                            <div>
+                                <h1 class="font-bold inline">Merits:</h1>
+                                <p class="inline">3</p>
+                            </div>
+                        </div>
+
+
+                        <div class="pr-2">
+                            <hr class="border-t border-gray-300">
+                        </div>
+
+
+                        <div class="bars">
+
+                            <div class="energy">
+                                <div class="relative">
+                                    <h1 class="font-bold inline">Energy: </h1>
+                                    <p class="inline">22/150</p>
+                                    <p class="inline absolute end-3">02:25</p>
+                                </div>
+                                <div class="h-3 bg-white mr-2 border rounded-md border-gray-300 items-center relative flex">
+                                    <div class="h-2 bg-green-500 w-4 absolute start-0 rounded-tl-md rounded-bl-md">
+                                    </div>
+                                </div>
+                                <div class="mr-2 flex">
+                                    <div class="h-2 w-1/6 border-r border-gray-300"></div>
+                                    <div class="h-2 w-1/6 border-r border-gray-300"></div>
+                                    <div class="h-2 w-1/6 border-r border-gray-300"></div>
+                                    <div class="h-2 w-1/6 border-r border-gray-300"></div>
+                                    <div class="h-2 w-1/6 border-r border-gray-300"></div>
+                                </div>
+                            </div>
+
+
+                            <div class="nerve">
+                                <div class="relative">
+                                    <h1 class="font-bold inline">nerve: </h1>
+                                    <p class="inline">45/100</p>
+                                    <p class="inline absolute end-3">02:25</p>
+                                </div>
+                                <div class="h-3 bg-white mr-2 border rounded-md border-gray-300 items-center relative flex">
+                                    <div class="h-2 bg-red-500 w-1/2 absolute start-0 rounded-tl-md rounded-bl-md">
+                                    </div>
+                                </div>
+                                <div class="mr-2 flex">
+                                    <div class="h-2 w-1/6 border-r border-gray-300"></div>
+                                    <div class="h-2 w-1/6 border-r border-gray-300"></div>
+                                    <div class="h-2 w-1/6 border-r border-gray-300"></div>
+                                    <div class="h-2 w-1/6 border-r border-gray-300"></div>
+                                    <div class="h-2 w-1/6 border-r border-gray-300"></div>
+                                </div>
+                            </div>
+
+
+                            <div class="happy">
+                                <div class="relative">
+                                    <h1 class="font-bold inline">happy: </h1>
+                                    <p class="inline">4275/4275</p>
+                                    <p class="inline absolute end-3">02:25</p>
+                                </div>
+                                <div class="h-3 bg-white mr-2 border rounded-md border-gray-300 items-center relative flex">
+                                    <div class="h-2 bg-yellow-500 w-full absolute start-0 rounded-md">
+                                    </div>
+                                </div>
+                                <div class="mr-2 flex">
+                                    <div class="h-2 w-1/6 border-r border-gray-300"></div>
+                                    <div class="h-2 w-1/6 border-r border-gray-300"></div>
+                                    <div class="h-2 w-1/6 border-r border-gray-300"></div>
+                                    <div class="h-2 w-1/6 border-r border-gray-300"></div>
+                                    <div class="h-2 w-1/6 border-r border-gray-300"></div>
+                                </div>
+                            </div>
+
+
+                            <div class="life">
+                                <div class="relative">
+                                    <h1 class="font-bold inline">life: </h1>
+                                    <p class="inline">2575/2575</p>
+                                    <p class="inline absolute end-3">02:25</p>
+                                </div>
+                                <div class="h-3 bg-white mr-2 border rounded-md border-gray-300 items-center relative flex">
+                                    <div class="h-2 bg-blue-500 w-full absolute start-0 rounded-md">
+                                    </div>
+                                </div>
+                                <div class="mr-2 flex">
+                                    <div class="h-2 w-1/6 border-r border-gray-300"></div>
+                                    <div class="h-2 w-1/6 border-r border-gray-300"></div>
+                                    <div class="h-2 w-1/6 border-r border-gray-300"></div>
+                                    <div class="h-2 w-1/6 border-r border-gray-300"></div>
+                                    <div class="h-2 w-1/6 border-r border-gray-300"></div>
+                                </div>
+                            </div>
+
+
+                            <div class="chain">
+                                <div class="relative">
+                                    <h1 class="font-bold inline">chain: </h1>
+                                    <p class="inline">22/150</p>
+                                    <p class="inline absolute end-3">51/100</p>
+                                </div>
+                                <div class="h-3 bg-white mr-2 border rounded-md border-gray-300 items-center relative flex">
+                                    <div class="h-2 bg-gray-500 w-1/2 absolute start-1 rounded-tl-md rounded-bl-md">
+                                    </div>
+                                </div>
+                                <div class="mr-2 flex">
+                                    <div class="h-2 w-1/6 border-r border-gray-300"></div>
+                                    <div class="h-2 w-1/6 border-r border-gray-300"></div>
+                                    <div class="h-2 w-1/6 border-r border-gray-300"></div>
+                                    <div class="h-2 w-1/6 border-r border-gray-300"></div>
+                                    <div class="h-2 w-1/6 border-r border-gray-300"></div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="rounded-tr-lg rounded-br-lg mt-1">
+                    <div class="flex justify-center h-9 ">
+                        <button class="w-1/3  border-r border-gray-300 inline-block bg-gradient-to-b from-white to-gray-200 hover:bg-gradient-to-t from-white to-gray-200">
+                            <i class='bx bxs-envelope'></i>
+                        </button>
+                        <button class="w-1/3 border-r border-gray-300 inline-block bg-gradient-to-b from-white to-gray-200 hover:bg-gradient-to-t from-white to-gray-200">
+                            <i class='bx bxs-alarm-exclamation'></i>
+                        </button>
+                        <button class="w-1/3 inline-block bg-gradient-to-b from-white to-gray-200 hover:bg-gradient-to-t from-white to-gray-200 rounded-tr-lg rounded-br-lg">
+                            <i class='bx bxs-medal'></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="areas m-1">
+
+                <div class="head pl-2 rounded-tr-lg rounded-br-lg mb-1" style="background-image: repeating-linear-gradient(90deg,#314960 0% .4%,#3c5268 .4% .8%);">
+                    <h6 class="text-white">
+                        information
+                    </h6>
+                </div>
+
+                <a href="">
+                    <div class="body pl-2 rounded-tr-lg rounded-br-lg mb-1 bg-gray-100 text-black flex gap-3 hover:bg-white">
+                        <div>
+                            <i class='bx bxs-plane-alt'></i>
+                        </div>
+                        <h6 class="">
+                            information
+                        </h6>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="body pl-2 rounded-tr-lg rounded-br-lg mb-1 bg-gray-100 text-black flex gap-3 hover:bg-white">
+                        <div>
+                            <i class='bx bxs-hand' ></i>
+                        </div>
+                        <h6 class="">
+                            my faction
+                        </h6>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="body pl-2 rounded-tr-lg rounded-br-lg mb-1 bg-gray-100 text-black flex gap-3 hover:bg-white">
+                        <div>
+                            <i class='bx bxs-shopping-bag' ></i>
+                        </div>
+                        <h6 class="">
+                            job
+                        </h6>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="body pl-2 rounded-tr-lg rounded-br-lg mb-1 bg-gray-100 text-black flex gap-3 hover:bg-white">
+                        <div>
+                            <i class='bx bx-target-lock' ></i>
+                        </div>
+                        <h6 class="">
+                            mission
+                        </h6>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="body pl-2 rounded-tr-lg rounded-br-lg mb-1 bg-gray-100 text-black flex gap-3 hover:bg-white">
+                        <div>
+                            <i class='bx bxs-chat' ></i>
+                        </div>
+                        <h6 class="">
+                            forums
+                        </h6>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="body pl-2 rounded-tr-lg rounded-br-lg mb-1 bg-gray-100 text-black flex gap-3 hover:bg-white">
+                        <div>
+                            <i class='bx bxs-wine' ></i>
+                        </div>
+                        <h6 class="">
+                            hall of fame
+                        </h6>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="body pl-2 rounded-tr-lg rounded-br-lg mb-1 bg-gray-100 text-black flex gap-3 hover:bg-white">
+                        <div>
+                            <i class='bx bxs-calendar' ></i>
+                        </div>
+                        <h6 class="">
+                            calendar
+                        </h6>
+                    </div>
+                </a>
+
+
+            </div>
+
+
+            <div class="lists">
+
+                <div class="head pl-2 rounded-tr-lg rounded-br-lg mb-1" style="background-image: repeating-linear-gradient(90deg,#314960 0% .4%,#3c5268 .4% .8%);">
+                    <h6 class="text-white">
+                        lists
+                    </h6>
+                </div>
+
+                <a href="">
+                    <div class="body pl-2 rounded-tr-lg rounded-br-lg mb-1 bg-gray-100 text-black flex gap-3 hover:bg-white">
+                        <div>
+                            <i class='bx bx-body' ></i>
+                        </div>
+                        <h6 class="">
+                            friends
+                        </h6>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="body pl-2 rounded-tr-lg rounded-br-lg mb-1 bg-gray-100 text-black flex gap-3 hover:bg-white">
+                        <div>
+                            <i class='bx bx-body' ></i>
+                        </div>
+                        <h6 class="">
+                            enemies
+                        </h6>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="date border-l border-black pl-2">
+                <p>
+                    Sun 23:25:02 - 24/11/24
+                    <br>
+                    Server: www12
+                </p>
+            </div>
+
+        </div>
+        <!-- end slid bar -->
+
+
+        <!-- start profile -->
+         <div class="profile w-4/5">
+
+
+            <div class="titel">
+                <div class=" flex gap-6">
+                    <h1 class="font-bold text-3xl w-full">
+                        Cairo2's Profile
+                    </h1>
+                    <button class="flex items-center">
+                        <i class='bx bx-arrow-back'></i>
+                        back
+                    </button>
+                    <button class="flex items-center">
+                        <i class='bx bx-highlight'></i>
+                        tutorial
+                    </button>
+                </div>
+                <hr class="border border-t-gray-400 mb-2">
+            </div>
+
+            <div class="grid">
+
+
+                <div class="grid grid-cols-2 gap-2">
+
+
+                    <!-- start user information -->
+                    <div class="user_information">
+
+
+                        <div class="user_information_head relative bg-gradient-to-b from-nav_from to-nav_to text-white border rounded-tr-md rounded-tl-md">
+                            <h1 class="relative start-2">
+                                User Information
+                            </h1>
+                        </div>
+
+
+                        <div class="user_information_body bg-gray-200 grid grid-cols-[60%,40%] border rounded-br-md rounded-bl-md">
+
+
+                            <div class="left_col m-2">
+                                <div class="relative bg-white flex justify-center items-center m-1 shadow">
+                                    <img src="https://www.torn.com/images/honors/964/f.png" alt="" class="m-1">
+                                    <div class="absolute">
+                                      <p>Cairo2</p>
+                                    </div>
+                                </div>
+
+                                <div class="relative bg-white flex justify-center items-center m-1">
+                                    <img src="https://www.torn.com/images/profile_man.jpg" alt="" class="m-1">
+                                </div>
+                                
+                            </div>
+
+                            <div class="right_col m-2 grid grid-rows-3 ">
+
+
+                                <div class="">
+
+
+                                    <div class="flex justify-center font-bold text-gray-400">
+                                        <p>level</p>
+                                    </div>
+
+                                    
+                                    <div class="flex justify-center  h-1/3">
+                                        <div class="flex justify-center items-center gap-1 border border-gray-400 w-[50%] bg-gradient-to-b from-red-300 to-blue-300 ">
+
+
+                                            <div class="">
+                                                <p class="">
+                                                    0
+                                                </p>
+                                            </div>
+    
+    
+                                            <div class="">
+                                                <p>
+                                                    5
+                                                </p>
+                                            </div>
+    
+    
+                                            <div class="">
+                                                <p>
+                                                    4
+                                                </p>
+                                            </div>
+    
+    
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+                                <div>
+
+
+                                    <div class="flex justify-center font-bold text-gray-400">
+                                        <p>rank</p>
+                                    </div>
+
+
+                                    <div class="flex justify-center  h-1/3">
+                                        <div class="flex justify-center items-center gap-1 border border-gray-400 w-[100%] bg-gradient-to-b from-red-300 to-blue-300 ">
+
+
+                                            <div class="">
+                                                <p class="">
+                                                    Supreme
+                                                </p>
+                                            </div>
+    
+
+    
+    
+                                        </div>
+                                    </div>
+
+                                    <div class="flex justify-center  h-1/3">
+                                        <div class="flex justify-center items-center gap-1 border border-gray-400 w-[100%] bg-gradient-to-b from-red-300 to-blue-300 ">
+
+
+                                            <div class="">
+                                                <p class="">
+                                                    Loser
+                                                </p>
+                                            </div>
+    
+
+    
+    
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+
+
+                                <div>
+
+
+                                    <div class="flex justify-center font-bold text-gray-400">
+                                        <p>age</p>
+                                    </div>
+
+
+                                    <div class="flex justify-center  h-1/3">
+                                        <div class="flex justify-center items-center gap-1 border border-gray-400 w-[100%] bg-gradient-to-b from-red-300 to-blue-300 ">
+
+
+                                            <div class="">
+                                                <p class="">
+                                                    0
+                                                </p>
+                                            </div>
+    
+    
+                                            <div class="">
+                                                <p>
+                                                    5
+                                                </p>
+                                            </div>
+    
+    
+                                            <div class="">
+                                                <p>
+                                                    4
+                                                </p>
+                                            </div>
+    
+
+                                            <div class="">
+                                                <p>
+                                                    4
+                                                </p>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <!-- end user information -->
+
+
+
+                    
+                    <div class="grid grid-rows-[64%,34%] gap-1">
+
+                        <!-- start actions -->
+                        <div class="actions">
+                            
+
+                            <div class="actions_head relative bg-gradient-to-b from-nav_from to-nav_to text-white border rounded-tr-md rounded-tl-md">
+
+
+                                <h1 class="relative start-2">
+                                    Actions
+                                </h1>
+
+
+                            </div>
+
+
+                            <div class="acrions_body  h-[85%] bg-gray-200  border rounded-br-md rounded-bl-md">
+
+
+                                <div class="m-3">
+
+
+                                    <p>What would you like to do?</p>
+
+                                    <div class="flex gap-4">
+                                        <button class="w-14 h-14 bg-gray-300">
+
+                                            <i class='bx bx-calendar-exclamation'></i>
+
+                                        </button>
+
+                                        <button class="w-14 h-14 bg-gray-300">
+                                            
+                                            <i class='bx bxs-report' ></i>
+
+                                        </button>
+
+                                        <button class="w-14 h-14 bg-gray-300">
+                                            
+                                            <i class='bx bx-store'></i>
+
+                                        </button>
+
+                                    </div>
+
+
+                                </div>
+
+    
+                            </div>
+    
+
+
+                        </div>
+                        <!-- end actions -->
+
+                        <!-- start status -->
+                        <div class="status">
+
+
+                            <div class="status_head relative bg-gradient-to-b from-nav_from to-nav_to text-white border rounded-tr-md rounded-tl-md">
+
+
+                                <h1 class="relative start-2">
+                                    Status
+                                </h1>
+
+
+                            </div>
+
+
+                            <div class="status_body relative h-[80%]  bg-gray-200  border rounded-br-md rounded-bl-md">
+
+
+                                <p class="absolute bottom-3 left-3 bg-gradient-to-r from-blue-500  ">
+                                    Returning to Torn from South Africa
+                                </p>
+
+    
+                            </div>
+
+
+                        </div>
+                        <!-- end status -->
+
+                    </div>
+                    
+
+                </div>
+
+
+                <!-- start medals -->
+                <div class="medals mt-2 h-28 mb-8">
+
+
+                    <div class="medals_head relative bg-gradient-to-b from-nav_from to-nav_to text-white border rounded-tr-md rounded-tl-md">
+
+
+                        <h1 class="relative start-2">
+                            medals
+                        </h1>
+
+
+                    </div>
+
+
+                    <div class="medals_body relative h-[100%]  bg-gray-200  border rounded-br-md rounded-bl-md">
+
+
+                        <button class="absolute left-5 top-[30%]">
+                            <i class='bx bxs-chevron-left'></i>
+                        </button>
+
+                        
+                        <div class="absolute left-14 top-3 bg-red-400 w-[85%] h-[80%]">
+                            <i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i>
+                            <i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i>
+                            <i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i>
+                            <i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i>
+                            <i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i><i class='bx bxs-medal' ></i>
+                        </div>
+
+
+
+                        <button class="absolute right-5 top-[30%]">
+                            <i class='bx bxs-chevron-right'></i>
+                        </button>
+
+
+                    </div>
+
+
+                    
+                </div>
+                <!-- end medals -->
+
+
+                <div class="grid grid-cols-2 gap-2">
+
+
+                    <!-- start basic information -->
+                    <div class="basic_information">
+
+
+                        <div class="basic_information_head relative bg-gradient-to-b from-nav_from to-nav_to text-white border rounded-tr-md rounded-tl-md">
+                            <h1 class="relative start-2">
+                                basic information
+                            </h1>
+                        </div>
+
+
+                        <div class="basic_information_body relative h-full bg-gray-200 border rounded-br-md rounded-bl-md">
+
+                            
+                            <div class="icons absolute left-5">
+                                <i class='bx bx-male-sign pr-2'></i>
+                                <i class='bx bxs-bank pr-2'></i>
+                                <i class='bx bxs-hand pr-2'></i>
+                                <i class='bx bxs-star pr-2'></i>
+                                <i class='bx bxs-graduation pr-2'></i>
+                                <i class='bx bxs-flag pr-2'></i>
+                                <i class='bx bx-map-alt pr-2'></i>
+                                <i class='bx bx-candles pr-2'></i>
+                                <i class='bx bx-shopping-bag pr-2'></i>
+                                <i class='bx bx-leaf pr-2'></i>
+                                <i class='bx bxs-bug-alt pr-2'></i>
+                                <i class='bx bx-world pr-2'></i>
+                            </div>
+
+
+                            <div class="information grid grid-cols-[30%,70%] relative top-5">
+
+                                <div class="relative  ">
+                                    <div class="border-gray-400 border-t border-r relative"><p class="relative left-5">Name</p></div>
+                                    <div class="border-gray-400 border-t border-r relative"><p class="relative left-5">Role</p></div>
+                                    <div class="border-gray-400 border-t border-r relative"><p class="relative left-5">Faction</p></div>
+                                    <div class="border-gray-400 border-t border-r relative"><p class="relative left-5">Job</p></div>
+                                    <div class="border-gray-400 border-t border-r relative"><p class="relative left-5">Life</p></div>
+                                    <div class="border-gray-400 border-t border-r relative"><p class="relative left-5">Property</p></div>
+                                    <div class="border-gray-400 border-t border-r relative"><p class="relative left-5">Marital status</p></div>
+                                    <div class="border-gray-400 border-t border-r relative"><p class="relative left-5">Awards</p></div>
+                                    <div class="border-gray-400 border-t border-r relative"><p class="relative left-5">Friends</p></div>
+                                    <div class="border-gray-400 border-t border-r relative"><p class="relative left-5">Enemies</p></div>
+                                    <div class="border-gray-400 border-t border-r relative"><p class="relative left-5">Forum posts</p></div>
+                                    <div class="border-gray-400 border-t border-r relative"><p class="relative left-5">Last action</p></div>
+                                </div>
+
+
+                                <div>
+                                    <div class="border-gray-400 border-t relative "><p class="relative left-5">Cairo2 [2863991]</p></div>
+                                    <div class="border-gray-400 border-t relative "><p class="relative left-5">Civilian</p></div>
+                                    <div class="border-gray-400 border-t relative "><p class="relative left-5">Pacifican of NPO - Endurance</p></div>
+                                    <div class="border-gray-400 border-t relative "><p class="relative left-5">Sales Assistant of Sons of Texas Toys</p></div>
+                                    <div class="border-gray-400 border-t relative "><p class="relative left-5">2575 / 2575</p></div>
+                                    <div class="border-gray-400 border-t relative "><p class="relative left-5">Private Island</p></div>
+                                    <div class="border-gray-400 border-t relative "><p class="relative left-5">Single</p></div>
+                                    <div class="border-gray-400 border-t relative "><p class="relative left-5">303</p></div>
+                                    <div class="border-gray-400 border-t relative "><p class="relative left-5">2</p></div>
+                                    <div class="border-gray-400 border-t relative "><p class="relative left-5">17</p></div>
+                                    <div class="border-gray-400 border-t relative "><p class="relative left-5">5 (1 karma)</p></div>
+                                    <div class="border-gray-400 border-t relative "><p class="relative left-5">29 minutes ago</p></div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                    <!-- end basic information -->
+
+
+                    <div class="grid grid-rows-2">
+
+
+                        <!-- start personal information -->
+                        <div class="personal_information">
+
+
+                        <div class="personal_information_head relative bg-gradient-to-b from-nav_from to-nav_to text-white border rounded-tr-md rounded-tl-md">
+                            <h1 class="relative start-2">
+                                personal information
+                            </h1>
+                        </div>
+
+
+                        <div class="personal_information_body relative h-[85%] bg-gray-200 border rounded-br-md rounded-bl-md">
+
+                            
+
+
+                            <div class="information grid grid-cols-[30%,70%] relative">
+
+                                <div class="  ">
+                                    <div class="border-gray-400  border-r relative"><p class="relative left-5">Real name</p></div>
+                                    <div class="border-gray-400 border-t border-r relative"><p class="relative left-5">Country</p></div>
+                                    <div class="border-gray-400 border-t border-r relative"><p class="relative left-5">City</p></div>
+                                    <div class="border-gray-400 border-t border-r relative"><p class="relative left-5">Age</p></div>
+                                </div>
+
+
+                                <div>
+                                    <div class="border-gray-400  relative "><p class="relative left-5">N/A</p></div>
+                                    <div class="border-gray-400 border-t relative "><p class="relative left-5">N/A</p></div>
+                                    <div class="border-gray-400 border-t relative "><p class="relative left-5">N/A</p></div>
+                                    <div class="border-gray-400 border-t border-b relative "><p class="relative left-5">N/A</p></div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+                        </div>
+                        <!-- end personal information -->
+
+                        <!-- start competition status -->
+                        <div class="competition_status mt-2">
+
+
+                            <div class="competition_status_head relative bg-gradient-to-b from-nav_from to-nav_to text-white border rounded-tr-md rounded-tl-md">
+                                <h1 class="relative start-2">
+                                    Competition Status
+                                </h1>
+                            </div>
+    
+    
+                            <div class="competition_status_body relative h-full bg-gray-200 border rounded-br-md rounded-bl-md">
+    
+                                
+    
+    
+                                
+    
+    
+                            </div>
+    
+    
+                        </div>
+                        <!-- end competition status -->
+
+
+                    </div>
+                </div>
+            </div>
+
+         </div>
+        <!-- end profile -->
+
+
+    </div>
+    <!-- end body -->
+
+</body>
+</html>
